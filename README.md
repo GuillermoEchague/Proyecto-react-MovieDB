@@ -70,7 +70,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-## Dependencias del proyecto
+## Dependencias en desarrollo del proyecto
 
 ```bash
 # Axios
@@ -90,6 +90,17 @@ yarn add redux-devtools-extension
 # redux-logger
 yarn add redux-logger
 ```
+## Dependencias en producción del proyecto
+```bash
+
+```
+
+## Proyecto en producción en Versel
+
+```bash
+
+```
+
 
 ## Demostración del proyecto
 
