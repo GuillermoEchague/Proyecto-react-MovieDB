@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {useSelector, useDispatch} from 'react-redux';
 import {setSection} from '../actions';
 import '../assets/styles/components/Header.scss';
-import Logo from '../assets/static/images/logo.png'
+import Logo from '../assets/static/images/Logo.jpg'
 
 const Header = () => {
     const sectionActive = useSelector((state)=>state.sectionActive);
@@ -19,14 +19,14 @@ const Header = () => {
                 <img 
                     className = "header__logo-img"
                     src={Logo}
-                    alt="Rick and Morty Logo"
+                    alt="Movie Logo"
                 />
             </figure>
             <nav className="header__nav">
-                <ul className="header__nav_options">
+                <ul className="header__nav__options">
                 <li
                     onClick={()=>handleSetSetion('Movies')}
-                    className={`header__nav_options-item ${
+                    className={`header__nav__options-item ${
                         sectionActive === 'Movies' ?
                         'active' : ''
                     }`}
@@ -35,7 +35,7 @@ const Header = () => {
                 </li>
                 <li 
                 onClick={()=>handleSetSetion('Favorites')}
-                className={`header__nav_options-item ${
+                className={`header__nav__options-item ${
                     sectionActive === 'Favorites' ?
                         'active' : ''
                 }`}

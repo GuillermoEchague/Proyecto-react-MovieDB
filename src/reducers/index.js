@@ -3,24 +3,23 @@ const reducer = (state, action) => {
         case 'SET_FAVORITE':
             return {
                 ...state,
-                favoriteMovies: [...state.favoriteMovies, action.payload]
+                favoriteMovies: [...state.favoriteMovies, action.payload],
             };
         case 'DELETE_FAVORITE':
             return {
-                ...state,
+                ...state, 
                 favoriteMovies: state.favoriteMovies.filter(
                     (items) => items.data.id !== action.payload,
                 ),
             };
-
         case 'SET_SECTION':
             return {
                 ...state,
                 sectionActive: action.payload,
             };
-        default:
-            return state;
+        default: 
+            return state; 
     }
-}
+};
 
 export default reducer;

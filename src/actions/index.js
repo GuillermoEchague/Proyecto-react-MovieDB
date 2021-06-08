@@ -3,12 +3,12 @@ export const setFavorite = (payload) => ({
     payload,
 });
 
-export const deleteFavorite = (payload) =>({
-    type:'DELETE_FAVORITE',
-    payload
+export const deleteFavorite = (payload) => ({
+    type: 'DELETE_FAVORITE',
+    payload,
 });
 
-export const setSection = (payload) =>({
+export const setSection = (payload) => ({
     type: 'SET_SECTION',
-    payload
+    payload,
 });
