@@ -7,7 +7,7 @@ const Empty = () => (
         <img className="empty-img" src={emptyImage} alt="Rick" />
         <span className="empty-text">You don't have favorites.
         <br/>
-        Go and select your favorite characters.</span>    
+         Go to Movies and select your favorite Movies.</span>    
     </div>
 );
 

@@ -8,13 +8,15 @@ import reducer from './reducers';
 import App from './routes/App';
 
 const initialState = {
-  favoriteMovies:[],
-  sectionActive : 'Movies'
+  favoriteCharacters:[],
+  sectionActive : 'Characters'
 };
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store = createStore(reducer, initialState, composeEnhancers(applyMiddleware(logger)));
+
+
 
 
 ReactDOM.render(
@@ -23,4 +25,3 @@ ReactDOM.render(
   </Provider >,
   document.getElementById('root'),
 );
-

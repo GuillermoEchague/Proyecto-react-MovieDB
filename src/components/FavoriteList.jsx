@@ -1,19 +1,19 @@
 import React from "react";
 import {connect} from "react-redux";
 import "../assets/styles/components/FavoriteList.scss";
-import Movie from "./Movie";
+import Character from "./Character";
 import Empty from "./Empty";
 
 const FavoriteList = (props) => {
-    const {favoriteMovies} = props;
+    const {favoriteCharacters} = props;
 
     return (
         <div className="favoriteList">
-            {!favoriteMovies.length ? (
+            {!favoriteCharacters.length ? (
                 <Empty />
             ) : (
-                favoriteMovies.map((movie) => (
-                    <Movie key={movie.data.id} data={movie.data}/>
+                favoriteCharacters.map((character) => (
+                    <Character key={character.data.id} data={character.data}/>
                 ))
             )}
         </div>
@@ -22,7 +22,7 @@ const FavoriteList = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        favoriteMovies: state.favoriteMovies,
+        favoriteCharacters: state.favoriteCharacters,
         
     };
 };
