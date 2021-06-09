@@ -7,9 +7,10 @@ import {ReactComponent as SVGStar} from "../assets/static/icons/star.svg";
 import CharacterDetail from "./CharacterDetail";
 import Modal from "./Modal";
 import {BASE_PATH_IMG} from '../utils/constants';
+import useModal from "../hooks/useModal";
 
 const Character = (props) => {
-   const [modal, setModal] = useState(false);
+   const {modal, handleCloseModal, handleOpenModal} = useModal();
     const [favorite, setFavorite] = useState(false);
   
   //console.log(props)
@@ -17,13 +18,7 @@ const Character = (props) => {
     const { data, favoriteCharacters } = props;
     const { id, poster_path ,original_language, title,popularity,release_date, vote_count} = data;
 
-    const handleCloseModal = () => {
-      setModal(false);
-    };
-  
-    const handleOpenModal = () => {
-      setModal(true);
-    };
+    
   
     const handleSetFavorite = () => {
       props.setFavorite({ data });
@@ -103,6 +98,9 @@ const Character = (props) => {
 // prototype: components documentation
   Character.propTypes = {
     data: propTypes.object,
+    poster_path: propTypes.string,
+    title: propTypes.string,
+    favoriteCharacters: propTypes.array
   };
   
   // Native functions react-redux (HOC)
