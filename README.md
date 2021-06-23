@@ -99,14 +99,14 @@ git merge <Nombre Rama> -m "Mensaje rama"
 ### Error
 ![](img/error.png)
 
-### Character
-![](img/character.png)
+### Películas
+![](img/mainf.png)
 
-### Detail
+### Detalle Películas
 ![](img/detail1.png)
 ![](img/detail2.png)
 
-### Favorites
+### Películas Favoritas
 ![](img/favorites1.png)
 ![](img/favorites2.png)
 
