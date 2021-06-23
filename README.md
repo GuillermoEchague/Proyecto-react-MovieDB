@@ -3,6 +3,37 @@
  page favorites completed + custom hooks
 
 
+## Instrucciones proyecto final
+```bash
+
+Respecto al proyecto final como ha sido en las últimas ediciones, es libre, por tanto, la idea que ustedes lleven a cabo algo que les guste. 
+Tienen 2 opciones, pueden consumir algún API utilizando las formas ya vistas: api context + hooks o redux + hooks, como a ustedes les acomode mas.
+
+Se evaluará:
+
+1) Conexión y consumo de apis. Las llamadas pueden ser con fetch o axios
+2) Creación de rutas + lazy loading el proyecto
+3) Readme con la explicación y especificaciones del proyecto
+4) Arquitectura limpia basada en patrones de arquitecturas vistos en el curso y buenas prácticas con Code Splitting
+5) Implementación de página not found 404
+6) Aplicar el uso de hooks
+7) Creación de algún custom hook
+8) Utilización de Prop-Types en por lo menos 3 componentes
+9) Empaquetado de recursos a producción con Webpack y Babel
+10) Despliegue en producción en Vercel
+11) La UI la pueden implementar como mas les acomode
+12) Investigar y aplicar el HOC de ErrorBoundary (límites de error) a su proyecto
+
+Entregables:
+
+1) Link del repositorio + link a producción
+2) Nombre completo y rut
+
+COMIENZO DE PROYECTO FINAL: LUNES 10 DE MAYO
+FECHA DE ENTREGA: VIERNES 02 DE JUNIO HASTA LAS 00:00
+
+```
+
 ## Dependencias del proyecto
 
 ```bash
@@ -56,10 +87,8 @@ npm i -g vercel
 vercel
 # Proyecto a Producción
 vercel --prod
-# Inspect
-https://vercel.com/guillermoechague/redux-marzo-rick-and-morty/HtB6qnodf9VuLkGDCR49duXCu6SU
 #Production: 
-https://y-ten-delta.vercel.app
+https://redux-movie-guillermoechague.vercel.app/
 ```
 
 ## Ejecución de proyecto
