@@ -107,8 +107,10 @@ git merge <Nombre Rama> -m "Mensaje rama"
 ![](img/detail2.png)
 
 ### Películas Favoritas
-![](img/favorites1.png)
-![](img/favorites2.png)
+![](img/noFavoritos.png)
+![](img/Favoritos.png)
+
+
 
 ### Vercel
 ![](img/vercel.png)
