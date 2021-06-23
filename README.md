@@ -87,8 +87,10 @@ npm i -g vercel
 vercel
 # Proyecto a Producción
 vercel --prod
-#Production: 
+#Development: 
 https://redux-movie-guillermoechague.vercel.app/
+#Production: 
+https://redux-movie-i4sla0qbb-guillermoechague.vercel.app/
 ```
 
 ## Ejecución de proyecto
